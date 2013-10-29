@@ -3,6 +3,8 @@ SemanticTranslator
 
 The semantic translator executes predefined ontology mapping to mediate differences between ontologies. 
 
+![Translator](http://photo.yupoo.com/jjfd/DgX0BKpb/medish.jpg)
+
 We generally use the Jena framework  to handle the semantic level operations, and the open-source Pellet reasoner  for reasoning, which is a complete OWL DL reasoner and can reason with SWRL rules, to implement the semantic translator. 
 
 1. The translator is fed with serialized ontology instances. 
