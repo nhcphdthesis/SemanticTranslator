@@ -32,9 +32,8 @@ public class SemanticTranslator{
 		String mapping_URL = "";
 		String queryString = "";
 		InputStream in_mapping = null;
-		
+		//2. retrieve mapping
 		try {
-			//2. retrieve mapping
 			in_mapping = new FileInputStream(new File(mapping_URL));
 			//merge the input with the mapping
 			input.add(ModelFactory.createDefaultModel().read(in_mapping,null));
@@ -55,7 +54,6 @@ public class SemanticTranslator{
 		QueryExecution qe = QueryExecutionFactory.create(query, inferred);
 		ResultSet results = qe.execSelect();
 		// Output query results	
-		ResultSetFormatter.asXMLString(results);
-	    return inferred.toString();
+	    return ResultSetFormatter.asXMLString(results);
 	  }
 }
