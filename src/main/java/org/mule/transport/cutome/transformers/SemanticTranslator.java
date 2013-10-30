@@ -31,11 +31,12 @@ public class SemanticTranslator{
 		
 		String mapping_URL = "";
 		String queryString = "";
-		InputStream in_mapping;
+		InputStream in_mapping = null;
 		
 		try {
 			//2. retrieve mapping
 			in_mapping = new FileInputStream(new File(mapping_URL));
+			//merge the input with the mapping
 			input.add(ModelFactory.createDefaultModel().read(in_mapping,null));
 			in_mapping.close();
 		} catch (FileNotFoundException e) {
@@ -45,8 +46,9 @@ public class SemanticTranslator{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//3. reasoning
+		//3. reasoning with Pellet
 		OntModel inferred = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC, input);
+		inferred.prepare();
 		//4. serialization result
 		Query query = QueryFactory.create(queryString);
 		// Execute the query and obtain results
