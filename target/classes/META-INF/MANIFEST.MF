@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Built-By: Cai.Hailing
+Build-Jdk: 1.6.0_45
+Specification-Title: mule-transformer-customer
+Specification-Version: 3.5.0-M3-SNAPSHOT
+Specification-Vendor: MuleSoft, Inc.
+Implementation-Title: mule-transformer-customer
+Implementation-Version: 3.5.0-M3-SNAPSHOT
+Implementation-Vendor-Id: org.mule.transformer
+Implementation-Vendor: MuleSoft, Inc.
+Build-Date: 
+Build-Revision: 
+Created-By: Maven Integration for Eclipse
+Description: Mule ESB and Integration Platform
+Dev-List-Email: dev@mule.codehaus.org
+License: CPAL v1.0 http://www.mulesoft.com/CPAL/
+More-Info: For more information go to http://www.mulesoft.org
+Product-Url: http://www.mulesoft.org
+Recommended-Jdks: [1.6.0_26,1.7),[1.7.0_3,)
+Support: Get commercial support: http://www.mulesoft.com/support
+Supported-Jdks: [1.6,)
+Vendor-Url: http://www.mulesoft.com
+
