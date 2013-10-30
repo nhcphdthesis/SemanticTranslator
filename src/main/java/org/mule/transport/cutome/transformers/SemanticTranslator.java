@@ -18,9 +18,9 @@ public class SemanticTranslator extends AbstractMessageTransformer{
         setName("SemanticTranslator");
     }
 	@Transformer
-	  public URL translate(String string) throws MalformedURLException
+	  public String translate(String string) throws MalformedURLException
 	  {
-	      return new java.net.URL(string);
+	      return "";
 	  }
 	@Override
 	public Object transformMessage(MuleMessage arg0, String arg1)

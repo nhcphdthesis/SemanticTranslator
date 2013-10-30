@@ -35,5 +35,32 @@
 	<classpathentry kind="lib" path="lib/mule-core-3.5.0-M3-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/mule-module-annotations-3.5.0-M3-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/mule-module-spring-config-3.5.0-M3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jena-arq-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jena-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jena-iri-0.9.6.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jena-tdb-0.10.1.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/jgrapht-jdk1.5.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-cli.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-core.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-datatypes.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-el.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-explanation.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-jena.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-modularity.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-owlapiv3.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-pellint.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-query.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-rules.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/pellet-test.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="/JenaTest/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
