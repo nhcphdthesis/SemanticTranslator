@@ -21,30 +21,37 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 @ContainsTransformerMethods 
-public class SemanticTranslator{
+public class SemanticTranslator  {
+	String mappingURL = ""; // the location where the ontology mapping is deployed
+	String queryString = ""; //the query string that constructs structured message for target ontology
+	public String getMappingURL() {
+		return mappingURL;
+	}
+	public void setMappingURL(String mappingURL) {
+		this.mappingURL = mappingURL;
+	}
+	public String getQueryString() {
+		return queryString;
+	}
+	public void setQueryString(String queryString) {
+		this.queryString = queryString;
+	}
+	
 	@Transformer
-	  public String translate(String s) throws MalformedURLException
+	  public String translate(String s)throws FileNotFoundException,IOException
 	  {
 		//1. parse input
 		OntModel input = ModelFactory.createOntologyModel();
 		input.read(s,null);
 		
-		String mapping_URL = "";
-		String queryString = "";
+
 		InputStream in_mapping = null;
 		//2. retrieve mapping
-		try {
-			in_mapping = new FileInputStream(new File(mapping_URL));
+			in_mapping = new FileInputStream(new File(mappingURL));
 			//merge the input with the mapping
 			input.add(ModelFactory.createDefaultModel().read(in_mapping,null));
 			in_mapping.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 		//3. reasoning with Pellet
 		OntModel inferred = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC, input);
 		inferred.prepare();
